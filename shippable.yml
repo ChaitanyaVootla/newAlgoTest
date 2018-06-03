@@ -3,6 +3,8 @@ jobs:
     type: manifest
     steps:
       - TASK: managed
+    flags:
+      - falke-job-test
   - name: out-2
     type: manifest
     steps:
@@ -35,6 +37,8 @@ jobs:
       - IN: image
   - name: input-a
     type: manifest
+    flags:
+      - out-res-test
     steps:
       - TASK: managed
       - OUT: image
