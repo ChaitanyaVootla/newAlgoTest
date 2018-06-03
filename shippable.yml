@@ -1,0 +1,20 @@
+jobs:
+  - name: input
+    type: manifest
+    steps:
+      - TASK: managed
+  - name: out-2
+    type: manifest
+    steps:
+      - TASK: managed
+      - IN: input
+  - name: out-4
+    type: manifest
+    steps:
+      - TASK: managed
+      - IN: input
+  - name: out-3
+    type: manifest
+    steps:
+      - TASK: managed
+      - IN: input
