@@ -42,7 +42,7 @@ jobs:
 resources:
   - name: image
     type: image
-    integration: asd
+    integration: shipdeploy
     versionTemplate:
       sourceName: asd
       versionName: asd
