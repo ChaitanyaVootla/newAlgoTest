@@ -18,3 +18,31 @@ jobs:
     steps:
       - TASK: managed
       - IN: input
+  - name: out-2a
+    type: manifest
+    steps:
+      - TASK: managed
+      - IN: image
+  - name: out-4a
+    type: manifest
+    steps:
+      - TASK: managed
+      - IN: image
+  - name: out-3a
+    type: manifest
+    steps:
+      - TASK: managed
+      - IN: image
+  - name: input-a
+    type: manifest
+    steps:
+      - TASK: managed
+      - OUT: image
+
+resources:
+  - name: image
+    type: image
+    integration: asd
+    versionTemplate:
+      sourceName: asd
+      versionName: asd
